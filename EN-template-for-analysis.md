@@ -1,6 +1,6 @@
 **Date**<br>
 **Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
+**Kennason Boudreault , Sean Halaby , Amanda Kourtakos, Chimdalu Umeh**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Exploratory Data Analysis (EDA) & Pitch

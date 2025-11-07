@@ -1,6 +1,6 @@
 **Date**<br>
 **Course Code & Course Name**<br>
-**Kennason Boudreault , Sean Halaby , Amanda Kourtakos, Chimdalu Umeh**<br>
+**Student's First Name & Last Name**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Exploratory Data Analysis (EDA) & Pitch
@@ -24,7 +24,7 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-Insert text here.
+The dataset presents the 2021 Canadian Census data for the city of Ottawa, which is organized by its 24 municipal wards. It includes a wide range of demographic and socio-economic variables, as well as age, gender distribution, family status, and education. For this analysis, our group is focusing on education, specifically comparing undergraduate degrees in STEM (science, technology, engineering, and mathematics) to those in Arts and Communications (humanities, social sciences, and media studies). We aim to explore how these two fields differ across Ottawa’s wards, as well as what these differences might reveal about the educational trends in our city. The main sections of our pitch assignment include getting data, cleaning data, analyzing data, visualizing data, interpreting the results, and the conclusion.
 
 ## 2. Getting Data
 

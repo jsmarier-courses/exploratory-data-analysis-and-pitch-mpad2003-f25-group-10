@@ -31,8 +31,6 @@ The dataset contained 2,602 rows and 26 columns, with each row representing a de
 
 At first glance, the dataset was extensive and required significant scrolling and filtering. Some column headers were long (e.g., “Total - Knowledge of official languages - English and French”), making them harder to interpret. While most data consisted of numerical counts and percentages, a few cells contained missing or zero values, possibly due to rounding or privacy restrictions. Despite this, the data is still credible and reliable, providing detailed information about Ottawa’s population.
 
-
-
 ![](Raw_data.png)<br>
 *Figure 1: Screenshot of the raw dataset after importation.*
 
@@ -63,33 +61,25 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
-Insert text here.
+Before concluding our dataset, we conducted a VIMO (Valid, Invalid, Missing, Outlier) analysis to ensure that our findings were reliable and accurately represented Ottawa’s population. The dataset is based on the 2021 Census of Population, specifically the long-form census, which surveys about 25% of residents. Although it is a sample, it remains highly credible and representative of the city’s demographic and educational landscape.
 
+**Valid Data:**
+Valid data refers to whether the information accurately measures what it intends to. In this case, the dataset captures educational fields across Ottawa’s wards, focusing on STEM and Art degrees. Because the data comes from the long-form census, which provides detailed information on education levels and fields of study, it is a valid source for understanding how education varies geographically. For example, higher STEM concentrations in Kanata North align with that area’s population of professionals working in science and technology, confirming the data’s validity.
 
-Understanding Data 
-VIMO Analysis
-
-Before concluding our dataset, we conducted a VIMO analysis, an assessment of Valid, Invalid, Missing, and Outlier data to ensure that our findings were reliable and accurately represented Ottawa’s population. The dataset is based on the 2021 Census of Population, specifically the long-form census, which surveys about 25% of residents. Although it is a sample, it remains highly credible and representative of the city’s demographic and educational landscape.
-
-Valid data refers to whether the information accurately measures what it intends to. In this case, the dataset captures educational fields across Ottawa’s wards, focusing on STEM and Arts degrees. Because the data comes from the long-form census, which provides detailed information on education levels and fields of study, it is a valid source for understanding how education varies geographically. For example, higher STEM concentrations in Kanata North align with that area’s population of professionals working in science and technology, confirming the data’s validity.
-
+**Invalid Data:**
 Invalid data involves possible misclassifications or interpretive errors. To reduce this, we established clear definitions: STEM fields include sciences, engineering, math, and technology, while Arts and Communications include humanities, visual arts, and social sciences. These consistent groupings helped prevent bias and ensured accurate comparisons between wards.
 
+**Missing Data:**
 Missing data was minimal, with only small gaps due to rounding or confidentiality. We treated blank or zero values as very low counts rather than absences, confirming that the dataset remained complete and consistent enough for analysis.
 
-Outliers such as Kanata North’s high STEM rates or Somerset’s high Arts concentrations were not errors but reflections of real social and educational trends. These outliers helped reveal patterns showing how different communities foster different types of learning and career interests.
+**Outliers:**
+Outliers such as Kanata North’s high STEM rates or Somerset’s high Arts concentrations were not errors but reflections of real social and educational trends. These outliers helped reveal patterns showing how different communities create different types of learning and career interests.
 
+**Conclusion:**
 Together, this VIMO process confirmed that our dataset is credible and representative, allowing us to confidently explore our story: where you grow up can influence what you choose to study or pursue in life. The data showed that residents of Ottawa’s western wards (such as Kanata and Stittsville) are more likely to hold STEM degrees. In contrast, residents of central wards (such as Capital and Rideau-Vanier) are more likely to hold Arts and Communication degrees. This pattern reflects how community values, local schools, and neighborhood environments shape people’s educational and career paths, something we also recognized through our own personal experiences growing up in different areas of the city.
 
 
-
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
-
-**For example:**
-
-As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
@@ -115,7 +105,13 @@ Insert text here.
 
 ## 5. Conclusion
 
-Insert text here.
+Completing this data analysis project taught us that working with large public datasets is as much about storytelling as it is about numbers. At first, the most challenging part was understanding the dataset’s structure. With over two thousand rows, unclear headers, and repetitive variables, it was difficult to know where to begin. Cleaning and organizing the data required patience and precision, especially when trying to remember how to use functions like =TRIM() and narrowing down relevant information into pivot tables in Google Sheets
+
+Despite these challenges, the most rewarding part was seeing patterns emerge that told a real story about Ottawa’s communities. Figuring out how geography can shape education and how Western wards lean toward STEM while downtown areas favor the Arts made the project feel relevant and meaningful. It showed us that data can reveal intriguing insights about how people live and learn. 
+
+Through this process, we also recognized gaps in our own knowledge, especially in areas like data visualization, formula use, and critical interpretation. If we could redo the project, we would spend more time experimenting with charts and filters to create stronger visual evidence for our conclusions. Overall, this project helped us to appreciate how cleaned and analyzed data can form into a surprising narrative about the city we live in.
+
+
 
 ## 6. References
 

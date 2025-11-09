@@ -1,39 +1,53 @@
-**Date**<br>
-**Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
+**Jean-Sébastien Marier**
+
+**November 5, 2025**<br>
+**MPAD2003A Introductory Data Storytelling (WKS) Fall 2025**<br>
+**Amanda Kourtakos, Kennason Boudreault, Sean Halaby, Chimdalu Umeh**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
+
 # Exploratory Data Analysis (EDA) & Pitch
+## Ottawa’s Language Divide: How Geographic Location Influences Fields of Study
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-
-## Foreword
-
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-The dataset presents the 2021 Canadian Census data for the city of Ottawa, which is organized by its 24 municipal wards. It includes a wide range of demographic and socio-economic variables, as well as age, gender distribution, family status, and education. For this analysis, our group is focusing on education, specifically comparing undergraduate degrees in STEM (science, technology, engineering, and mathematics) to those in Arts and Communications (humanities, social sciences, and media studies). We aim to explore how these two fields differ across Ottawa’s wards, as well as what these differences might reveal about the educational trends in our city. The main sections of our pitch assignment include getting data, cleaning data, analyzing data, visualizing data, interpreting the results, and the conclusion.
+The dataset presents the 2021 Canadian Census data for the city of Ottawa, organized by its 24 municipal wards. It includes a wide range of demographic and socio-economic variables such as age, gender distribution, family status, and education. For this analysis, our group is focusing on education, specifically comparing undergraduate degrees in STEM (science, technology, engineering, and mathematics) to those in Arts and Communications (humanities, social sciences, and media studies). We aim to explore how these two fields differ across Ottawa’s wards, as well as what these differences might reveal about local educational trends.
+
+We used data from the City of Ottawa’s Open Data Portal, available here:
+
+CVS file: <a href="https://raw.githubusercontent.com/jsmarier/files-for-course-assignments/refs/heads/main/2021_Long_Form_Census_-_Ward_Data.csv" target="_blank">CVS file of long-form census</a><br>
+
+Original: <a href="https://open.ottawa.ca/datasets/ottawa::2021-long-form-census-ward-data/explore" target="_blank">Original long-form census link</a><br> 
+
+The main sections of our report include: *Getting Data*, *Cleaning Data*, *Understanding Data (VIMO Analysis)*, *Exploratory Data Analysis*, *Potential Story*, and *Conclusion*.
 
 ## 2. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+We began by downloading a CSV copy of the 2021 Long Form Census – Ward Data from the Ottawa Open Data portal. To make it easier to analyze, we imported it into Google Sheets by selecting File → Import → Upload → Insert new sheet → Import data.
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
+The dataset contained 2,602 rows and 26 columns, with each row representing a demographic indicator (e.g., total population, average income, or education level) and each column representing a geographic area (the city total plus 24 wards such as Kanata North, Stittsville, and Rideau-Rockcliffe).
 
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
+At first glance, the dataset was extensive and required significant scrolling and filtering. Some column headers were long (e.g., “Total - Knowledge of official languages - English and French”), making them harder to interpret. While most data consisted of numerical counts and percentages, a few cells contained missing or zero values, possibly due to rounding or privacy restrictions. Despite this, the data is still credible and reliable, providing detailed information about Ottawa’s population.
+
+
+
+![](Raw_data.png)<br>
+*Figure 1: Screenshot of the raw dataset after importation.*
+
+ Raw Google Sheet link: <a href="https://docs.google.com/spreadsheets/d/1Et5na0iqNPqnuylpLyU0DKL2hpSekxjYrOdPQDwxh68/edit?gid=256964509#gid=256964509" target="_blank">Original Google Sheet</a><br> 
+
+### Specific Observations
+
+- **Kanata North (Ward 4):** Leads in residents pursuing STEM fields (~25,220 individuals), aligning with its strong tech industry (Discover Technata, n.d.).  
+- **Stittsville (Ward 6):** Shows 11,135 individuals pursuing STEM or technical studies, likely due to proximity to Kanata’s technology corridor (Ottawa Community Voice, n.d.).  
+- **Somerset (Ward 14):** Features higher proportions of residents with university degrees, typical of downtown areas near universities and government offices (Statistics Canada, 2021).
+
+### Hypothesis
+
+We hypothesize that **where a person grows up in Ottawa influences their educational choices**. Specifically, western wards are expected to show higher STEM concentrations, while central wards lean toward Arts and Communications.
+
 
 **Here are examples of functions and lines of code put in grey boxes:**
 

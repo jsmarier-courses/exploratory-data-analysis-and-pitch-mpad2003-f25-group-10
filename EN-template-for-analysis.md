@@ -129,7 +129,12 @@ We also made a simple exploratory bar chart with the Google Sheets Chart tool to
 
 ## 4. Potential Story
 
-Insert text here.
+After cleaning and analyzing the data, we learned that the location of where you grew up can affect what you decide to do with your life. This was shown through the data, and with the use of the outlined numbers, our potential story became: “Residents of Ottawa’s western wards (like Kanata and Stittsville) are more likely to hold STEM-related degrees, while central and downtown wards (like Capital and Rideau-Vanier) have higher concentrations of Arts and Communication degrees.”
+
+We chose this story because we all felt we could personally relate to it. Coming from different neighborhoods, we noticed that certain programs were more heavily encouraged depending on where we lived. In some areas, there was more pressure to go into STEM, such as sciences and computers, while in others, creative fields like media, visual arts, or communications were more common. We felt that this was a story that many others could relate to because there can be a struggle of choosing what path to take, and how it can be confusing to follow what you actually want instead of what others expect from you.
+
+Our data and personal experiences also support this story. It shows how much a person's environment can influence their education and career path while also focusing on the differences between Ottawa's wards – how schools, communities, and their values shape what people are choosing to study in university. Therefore, our analysis highlights how these differences across the city reflect how each area can impact the paths people decide to take.
+
 
 ## 5. Conclusion
 

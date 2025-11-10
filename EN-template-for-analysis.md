@@ -127,9 +127,27 @@ We also made an exploratory bar chart with the Google Sheets Chart tool to visua
 ![](Bar_Chart.png)<br>
 *Figure 7: Bar chart comparing total Arts and STEM degrees across degree categories in Ottawa.*
 
+e chose variables that connected Ottawa’s 24 municipal wards to the university programs that students from these wards enrolled in. Allowing us to test whether the neighborhood someone grew up in affected the program they chose. There is a common belief that “where you came from affects who you become” (Kanata North Business Association, 2023). The goal of our group was to challenge this theory with real data to see if this is true or just an assumption. By analyzing the data, we hope to see whether one's neighborhood plays a role in shaping post-secondary study direction. 
+
+We compared enrollment patterns across all wards, focusing on majors such as social sciences, humanities, and visual or performing arts. In hopes of observing differences based on geography and whether those were influenced by things like population, location, or income. Using data clean-up techniques like sum and split, we can see if certain wards leaned towards certain fields.  
+
+When looking at the patterns, we observed that the wards that were more central and closer to downtown Ottawa had more arts and communication students. While Ottawa's wards on the outskirts, specifically more Western wards, had more students who ended up in more STEM-focused studies. An example that both stood out and gave us the idea for this is Kanata North’s data, being the leading ward for students pursuing studies in STEM, with 25,220 with, 1,290 in humanities, 580 in visual and performing arts, and only 305 students pursuing general liberal arts. After further research on this area, we learned that this ward is home to Ottawa’s largest tech hub, The Kanata North Technology Park hosts over 540 companies and 33,000 employees. (Kanata North Business Association, 2023)  
+
+This led us to further investigate, and we learned that this pattern appeared across other wards. Despite varying numbers, the pattern remained evident. When turning this into a story, we wanted to keep the idea from our thesis: Does your past and upbringing affect your future? Using the data, we shaped our story on how a person's environment can influence their education and career path while also focusing on the differences between Ottawa's wards and how schools, communities, and their values shape what people are choosing to study in university. This is something we can all personally relate to, and feel will be an engaging story for university students.  
+
+For future investigation, we plan to analyze median income and other demographic factors in each ward to understand better what influences these patterns.
+
+
+
+
 ## 4. Potential Story
 
-Insert text here.
+After cleaning and analyzing the data, we learned that the location of where you grew up can affect what you decide to do with your life. This was shown through the data, and with the use of the outlined numbers, our potential story became: “Residents of Ottawa’s western wards (like Kanata and Stittsville) are more likely to hold STEM-related degrees, while central and downtown wards (like Capital and Rideau-Vanier) have higher concentrations of Arts and Communication degrees.”
+
+We chose this story because we all felt we could personally relate to it. Coming from different neighborhoods, we noticed that certain programs were more heavily encouraged depending on where we lived. In some areas, there was more pressure to go into STEM, such as sciences and computers, while in others, creative fields like media, visual arts, or communications were more common. We felt that this was a story that many others could relate to because there can be a struggle of choosing what path to take, and how it can be confusing to follow what you actually want instead of what others expect from you.
+
+Our data and personal experiences also support this story. It shows how much a person's environment can influence their education and career path while also focusing on the differences between Ottawa's wards – how schools, communities, and their values shape what people are choosing to study in university. Therefore, our analysis highlights how these differences across the city reflect how each area can impact the paths people decide to take.
+
 
 ## 5. Conclusion
 

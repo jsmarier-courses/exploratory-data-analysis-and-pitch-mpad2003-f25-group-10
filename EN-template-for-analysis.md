@@ -83,7 +83,27 @@ Together, this VIMO process confirmed that our dataset is credible and represent
 
 ### 3.2. Cleaning Data
 
-Insert text here.
+To begin preparing our dataset, we focused on cleaning the information to make it relevant and easy to interpret. Since our topic compared STEM and Arts degrees across Ottawa’s 24 wards, we started by reviewing the sheet carefully and keeping only the columns that were useful for our analysis. This also helped to focus on the data that directly matched our topic and made it easier to compare results between wards.
+
+The first step in our cleaning process was to remove any unnecessary data that was not relevant to our project. Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently. 
+
+Example: =TRIM(A2)
+
+Next, we removed any duplicates that might have appeared when we were copying data between sources. 
+
+Example:
+Data → Data cleanup → Remove duplicates
+
+We also froze the first row to keep the column headers visible while scrolling through the dataset. This made it easier to navigate large amounts of data and stay organized while cleaning and analyzing it.
+
+Example:
+View → Freeze → 1 Row
+
+After that, we quickly scanned the dataset to make sure that there were no blank cells or missing numbers that could affect our totals or averages. These steps helped ensure that our dataset was clean, consistent, and ready for analysis.
+
+
+Once our data was fully cleaned, we could finally focus on understanding the data. We looked at how the numbers changed between wards and noticed that Kanata North showed higher numbers in STEM fields, while other wards leaned more toward the Arts.
+
 
 ### 3.3. Exploratory Data Analysis (EDA)
 

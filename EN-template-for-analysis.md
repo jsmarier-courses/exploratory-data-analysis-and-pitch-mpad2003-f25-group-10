@@ -47,17 +47,6 @@ At first glance, the dataset was extensive and required significant scrolling an
 We hypothesize that **where a person grows up in Ottawa influences their educational choices**. Specifically, western wards are expected to show higher STEM concentrations, while central wards lean toward Arts and Communications.
 
 
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
-
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
@@ -87,22 +76,28 @@ To begin preparing our dataset, we focused on cleaning the information to make i
 
 The first step in our cleaning process was to remove any unnecessary data that was not relevant to our project. Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently. 
 
-Example: =TRIM(A2)
+Example:
+![](whitespace.png)<br>
+*Figure 2: Screenshot of whitespace removal.*
 
 Next, we removed any duplicates that might have appeared when we were copying data between sources. 
 
 Example:
-Data → Data cleanup → Remove duplicates
+![](duplicates.png)<br>
+*Figure 3: Screenshot of duplicates removal.*
 
 We also froze the first row to keep the column headers visible while scrolling through the dataset. This made it easier to navigate large amounts of data and stay organized while cleaning and analyzing it.
 
 Example:
-View → Freeze → 1 Row
+![](freeze.png)<br>
+*Figure 4: Screenshot of freeze on row 1.*
 
 After that, we quickly scanned the dataset to make sure that there were no blank cells or missing numbers that could affect our totals or averages. These steps helped ensure that our dataset was clean, consistent, and ready for analysis.
 
-
 Once our data was fully cleaned, we could finally focus on understanding the data. We looked at how the numbers changed between wards and noticed that Kanata North showed higher numbers in STEM fields, while other wards leaned more toward the Arts.
+
+![](Cleaned_data.png)<br>
+*Figure 5: Screenshot of cleaned datasheet.*
 
 
 ### 3.3. Exploratory Data Analysis (EDA)

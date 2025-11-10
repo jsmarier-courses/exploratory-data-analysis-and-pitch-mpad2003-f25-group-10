@@ -72,20 +72,26 @@ Together, this VIMO process confirmed that our dataset is credible and represent
 
 ### 3.2. Cleaning Data
 
-To begin preparing our dataset, we focused on cleaning the information to make it relevant and easy to interpret. Since our topic compared STEM and Arts degrees across Ottawa’s 24 wards, we started by reviewing the sheet carefully and keeping only the columns that were useful for our analysis. This also helped to focus on the data that directly matched our topic and made it easier to compare results between wards.
+To begin preparing our dataset, we focused on cleaning the information to make it relevant and easy to interpret. Since our topic compared STEM and Arts degrees across Ottawa’s 24 wards, we started by reviewing the sheet carefully and keeping only the columns that were useful for our analysis.
 
-The first step in our cleaning process was to remove any unnecessary data that was not relevant to our project. Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently. 
+**Step 1: Remove unnecessary data**
+First, we removed any unnecessary data that was not relevant to our project. This made the dataset smaller, more focused, and easier to work with.
+
+**Step 2: Trim whitespace**
+ Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently and prevented issues with formulas or pivot tables.
 
 Example:
 ![](whitespace.png)<br>
 *Figure 2: Screenshot of whitespace removal.*
 
+**Step 3: Get rid of duplicates**
 Next, we removed any duplicates that might have appeared when we were copying data between sources. 
 
 Example:
 ![](duplicates.png)<br>
 *Figure 3: Screenshot of duplicates removal.*
 
+**Step 4: Freeze tool**
 We also froze the first row to keep the column headers visible while scrolling through the dataset. This made it easier to navigate large amounts of data and stay organized while cleaning and analyzing it.
 
 Example:
@@ -102,7 +108,7 @@ Once our data was fully cleaned, we could finally focus on understanding the dat
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Once our data was fully cleaned, we focused on exploring patterns across Ottawa’s 24 wards. We created a pivot table in Google Sheets that listed the 24 wards as rows and degree type (STEM, Arts) as columns. This pivot table allowed us to compare the total number of people with STEM or Arts degrees side-by-side and quickly identify geographic trends.
+ Next, we created a pivot table in Google Sheets that listed the 24 wards as rows and degree type (STEM, Arts) as columns. This pivot table allowed us to compare the total number of people with STEM or Arts degrees side-by-side and quickly identify geographic trends.
 
 **Pivot table setup (Google Sheets):**  
 - **Rows:** Ward name  
@@ -116,7 +122,7 @@ Example of formulas used:
 ![](pivot_table.png)<br>
 *Figure 6: Pivot table used for comparing STEM and Arts degrees across wards.*
 
-We also made an exploratory bar chart with the Google Sheets Chart tool to visualize the citywide comparison between STEM and Arts totals. The bar chart was useful for clearly seeing absolute numbers and comparing totals across degree categories.
+We also made an exploratory horizontal bar chart with the Google Sheets Chart tool to visualize the citywide comparison between STEM and Arts totals. The bar chart was useful for clearly seeing absolute numbers and comparing totals across degree categories. According to the Module 6 reading *Statistics Canada’s Statistics: Power from Data*, one advantage of using a horizontal bar chart is that it provides more space for text labels when category names are long, unlike vertical charts which “lack space for text labelling at the foot of each bar” (Statistics Canada, 2023).
 
 
 **Bar chart setup (Google Sheets):**  
@@ -140,16 +146,15 @@ This led us to further investigate, and we learned that this pattern appeared ac
 For future investigation, we plan to analyze **median income**, **proximity to post-secondary institutions**, and **population demographics** in each ward to better understand what drives these differences and to strengthen the narrative connections in our final data story.
 
 
-
-
-
 ## 4. Potential Story
 
 After cleaning and analyzing the data, we learned that the location of where you grew up can affect what you decide to do with your life. This was shown through the data, and with the use of the outlined numbers, our potential story became: “Residents of Ottawa’s western wards (like Kanata and Stittsville) are more likely to hold STEM-related degrees, while central and downtown wards (like Capital and Rideau-Vanier) have higher concentrations of Arts and Communication degrees.”
 
 We chose this story because we all felt we could personally relate to it. Coming from different neighborhoods, we noticed that certain programs were more heavily encouraged depending on where we lived. In some areas, there was more pressure to go into STEM, such as sciences and computers, while in others, creative fields like media, visual arts, or communications were more common. We felt that this was a story that many others could relate to because there can be a struggle of choosing what path to take, and how it can be confusing to follow what you actually want instead of what others expect from you.
 
-Our data and personal experiences also support this story. It shows how much a person's environment can influence their education and career path while also focusing on the differences between Ottawa's wards – how schools, communities, and their values shape what people are choosing to study in university. Therefore, our analysis highlights how these differences across the city reflect how each area can impact the paths people decide to take.
+Our data and personal experiences also support this story. It shows how much a person's environment can influence their education and career path while also focusing on the differences between Ottawa's wards – how schools, communities, and their values shape what people are choosing to study in university. Therefore, our analysis highlights how these differences across the city reflect how each area can impact the paths people decide to take. To fully tell this story, we could look at local school programs, access to technology hubs, and median household incomes in each ward. Interviews with students, guidance counselors, and university admission officers could also give us firsthand data. Relevant sources like Statistics Canada reports, Ottawa Business News articles on the Kanata North Technology Park, and studies on education trends could also help contextualize our narrative.
+
+Therefore, our analysis describes how these differences across the city reflect how each area can impact the paths people decide to take.
 
 
 ## 5. Conclusion
@@ -164,8 +169,18 @@ Through this process, we also recognized gaps in our own knowledge, especially i
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
 
-**Here's an example:**
+Ottawa Community Voice. (2022, April 20). *Stittsville & Richmond summary report*. Ottawa Community Voice. https://www.ocna.org/uploads/files/Ottawa%20Community%20Voice%20-%20Stittsville%20%26%20Richmond.pdf
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+Statistics Canada. (2022, February 9). *Focus on geography series, 2021 Census of Population* [Web page]. https://www12.statcan.gc.ca/census-recensement/2021/as-sa/fogs-spg/Page.cfm?lang=e&topic=1&dguid=2021A00033506
+
+Discover Technata. (n.d.). *Discover Technata – live, work, play, learn, innovate in Canada’s largest tech park*. https://www.discovertechnata.com/
+
+Kanata North Business Association. (n.d.). *Hub for emerging technology companies in Ottawa: Kanata North*. 
+Technology-hub-emerging-businesses-ottawa-kanata-north
+
+Kanata North Business Association. (2023). *Building together: A strategic roadmap to 2030 (2023‑2028 strategic plan)*. https://www.kanatanorthba.com/strategicplan/
+
+Statistics Canada. (n.d.). *Bar charts: When to use them and how to interpret them*. 
+https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/bargraph-diagrammeabarres/5214818-eng.htm
+

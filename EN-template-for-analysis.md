@@ -102,17 +102,30 @@ Once our data was fully cleaned, we could finally focus on understanding the dat
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+Once our data was fully cleaned, we focused on exploring patterns across Ottawa’s 24 wards. We created a pivot table in Google Sheets that listed the 24 wards as rows and included columns showing the total number of people with STEM or Arts degrees. This table allowed us to compare wards side-by-side and quickly identify geographic trends.
 
-**This section should include a screen capture of your pivot table, like so:**
+**Pivot table setup (Google Sheets):**  
+- **Rows:** Ward name  
+- **Columns:** Degree type (STEM, Arts)  
+- **Values:** SUM of individuals in each degree category (or COUNTA if counting non-empty entries)
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+Example of formulas used:
+```=SUM(C2:C25)```
+```=COUNTA(D2:D100)```
 
-**This section should also include a screen capture of your exploratory chart, like so:**
+![](pivot_table.png)<br>
+*Figure 6: Pivot table used for comparing STEM and Arts degrees across wards.*
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+We also made a simple exploratory bar chart with the Google Sheets Chart tool to visualize the citywide comparison between STEM and Arts totals. The bar chart was useful for clearly seeing absolute numbers and comparing totals across degree categories.
+
+
+**Bar chart setup (Google Sheets):**  
+1. Selected the pivot table results  
+2. Clicked **Insert → Chart → Chart type: Bar chart**  
+3. Used the Chart Editor to customize axis labels, chart title, and colors for clarity  
+
+![](Bar_Chart.png)<br>
+*Figure 8: Bar chart comparing total Arts and STEM degrees across degree categories in Ottawa.*
 
 ## 4. Potential Story
 

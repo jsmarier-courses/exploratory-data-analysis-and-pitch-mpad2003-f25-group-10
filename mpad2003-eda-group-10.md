@@ -75,7 +75,7 @@ Together, this VIMO process confirmed that our dataset is credible and represent
 To begin preparing our dataset, we focused on cleaning the information to make it relevant and easy to interpret. Since our topic compared STEM and Arts degrees across Ottawa’s 24 wards, we started by reviewing the sheet carefully and keeping only the columns that were useful for our analysis.
 
 **Step 1: Remove unnecessary data**
-First, we removed any unnecessary data that was not relevant to our project. This made the dataset smaller, more focused, and easier to work with. We considered using the ```FILTER()``` function to automatically extract only the columns related to Arts and STEM degrees, but there were too many rows. We found it easier to manually remove the columns. 
+First, we removed any unnecessary data that was not relevant. This made the dataset smaller, more focused, and easier to work with. We considered using the ```FILTER()``` function to automatically extract only the columns related to Arts and STEM degrees, but there were too many rows. We found it easier to manually remove the columns. 
 
 **Step 2: Trim whitespace**
  Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently and prevented issues with formulas or pivot tables.

@@ -3,13 +3,10 @@
 **November 5, 2025**<br>
 **MPAD2003A Introductory Data Storytelling (WKS) Fall 2025**<br>
 **Amanda Kourtakos, Kennason Boudreault, Sean Halaby, Chimdalu Umeh**<br>
-**Presented to Jean-Sébastien Marier**<br>
 
 
 # Exploratory Data Analysis (EDA) & Pitch
 ## Ottawa’s Language Divide: How Geographic Location Influences Fields of Study
-
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
 
 ## 1. Introduction
 
@@ -139,7 +136,7 @@ We then made an exploratory horizontal bar chart with the Google Sheets Chart to
 2. Clicked **Insert → Chart → Chart type: Bar chart**  
 3. Used the Chart Editor to customize axis labels, chart title, and colors for clarity  
 
-![](Bar_Chart.png)<br>
+![](pngoffinalchart.png)<br>
 *Figure 10: Final bar chart comparing total Arts and STEM degrees across Ottawa.*
 
 

@@ -39,7 +39,7 @@ At first glance, the dataset was extensive and required significant scrolling an
 ### Specific Observations
 
 - **Kanata North (Ward 4):** Leads in residents pursuing STEM fields (~25,220 individuals), aligning with its strong tech industry (Discover Technata, n.d.).  
-- **Stittsville (Ward 6):** Shows 11,135 individuals pursuing STEM or technical studies, likely due to proximity to Kanata’s technology corridor (Ottawa Community Voice, n.d.).  
+- **Stittsville (Ward 6):** Shows 11,135 individuals pursuing STEM or technical studies.
 - **Somerset (Ward 14):** Features higher proportions of residents with university degrees, typical of downtown areas near universities and government offices (Statistics Canada, 2021).
 
 ### Hypothesis
@@ -75,7 +75,7 @@ Together, this VIMO process confirmed that our dataset is credible and represent
 To begin preparing our dataset, we focused on cleaning the information to make it relevant and easy to interpret. Since our topic compared STEM and Arts degrees across Ottawa’s 24 wards, we started by reviewing the sheet carefully and keeping only the columns that were useful for our analysis.
 
 **Step 1: Remove unnecessary data**
-First, we removed any unnecessary data that was not relevant to our project. This made the dataset smaller, more focused, and easier to work with.
+First, we removed any unnecessary data that was not relevant to our project. This made the dataset smaller, more focused, and easier to work with. We considered using the ```FILTER()``` function to automatically extract only the columns related to Arts and STEM degrees, but there were too many rows. We found it easier to manually remove the columns. 
 
 **Step 2: Trim whitespace**
  Since there were extra spaces in the data, we used Google Sheets’ Trim Whitespace tool to eliminate extra spaces and ensure that all text was formatted consistently and prevented issues with formulas or pivot tables.
@@ -98,7 +98,7 @@ Example:
 ![](freeze.png)<br>
 *Figure 4: Screenshot of freeze on row 1.*
 
-After that, we quickly scanned the dataset to make sure that there were no blank cells or missing numbers that could affect our totals or averages. These steps helped ensure that our dataset was clean, consistent, and ready for analysis.
+After that, we quickly scanned the dataset to make sure that there were no blank cells or missing numbers that could affect our totals or averages. These steps helped ensure that our dataset was and ready for analysis.
 
 Once our data was fully cleaned, we could finally focus on understanding the data. We looked at how the numbers changed between wards and noticed that Kanata North showed higher numbers in STEM fields, while other wards leaned more toward the Arts.
 
@@ -108,21 +108,30 @@ Once our data was fully cleaned, we could finally focus on understanding the dat
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
- Next, we created a pivot table in Google Sheets that listed the 24 wards as rows and degree type (STEM, Arts) as columns. This pivot table allowed us to compare the total number of people with STEM or Arts degrees side-by-side and quickly identify geographic trends.
+ Next, we attempted to create a pivot table and in Google Sheets that listed the 24 wards as rows and all the degree type as columns. We then created a Bar chart with this data.
+ 
+ ![](24wards.png)<br>
+*Figure 6: First attempt Pivot table across all wards.*
 
-**Pivot table setup (Google Sheets):**  
-- **Rows:** Ward name  
-- **Columns:** Degree type (STEM, Arts)  
-- **Values:** SUM of individuals in each degree category (or COUNTA if counting non-empty entries)
+![](allwardschart.png)<br>
+*Figure 7: First attempt Bar chart across all wards.*
 
-Example of formulas used:
+
+ However, we found this was too much information to focus on, so we narrowed it down to strictly the sum of Ottawa wards.
+ 
+We then made a second pivot table, allowing us to compare the total number of people with STEM or Arts degrees side-by-side and quickly identify geographic trends. Although, this pivot table attempt (seen in figure 8) was also was not ideal for the Chart function tool, so we made a combined final version (seen in figure 8).
+
+Example of formulas used for totals:
 ```=SUM(C2:C25)```
 ```=COUNTA(D2:D100)```
 
-![](pivot_table.png)<br>
-*Figure 6: Pivot table used for comparing STEM and Arts degrees across wards.*
+![](pivot.png)<br>
+*Figure 8: Second attempt Pivot table used for comparing STEM and Arts degrees across wards.*
 
-We also made an exploratory horizontal bar chart with the Google Sheets Chart tool to visualize the citywide comparison between STEM and Arts totals. The bar chart was useful for clearly seeing absolute numbers and comparing totals across degree categories. According to the Module 6 reading *Statistics Canada’s Statistics: Power from Data*, one advantage of using a horizontal bar chart is that it provides more space for text labels when category names are long, unlike vertical charts which “lack space for text labelling at the foot of each bar” (Statistics Canada, 2023).
+![](pivot_table.png)<br>
+*Figure 9: Final version Pivot table used for comparing STEM and Arts degrees across wards.*
+
+We then made an exploratory horizontal bar chart with the Google Sheets Chart tool to visualize the citywide comparison between STEM and Arts totals. The bar chart was useful for clearly seeing absolute numbers and comparing totals across degree categories. We decided on a horizontal bar chart because according to the Module 6 reading *Statistics Canada’s Statistics: Power from Data*, an advantage of using a horizontal bar chart is that it provides more space for text labels when category names are long, unlike vertical charts which “lack space for text labelling at the foot of each bar” (Statistics Canada, 2023).
 
 
 **Bar chart setup (Google Sheets):**  
@@ -131,17 +140,16 @@ We also made an exploratory horizontal bar chart with the Google Sheets Chart to
 3. Used the Chart Editor to customize axis labels, chart title, and colors for clarity  
 
 ![](Bar_Chart.png)<br>
-*Figure 7: Bar chart comparing total Arts and STEM degrees across degree categories in Ottawa.*
+*Figure 10: Final bar chart comparing total Arts and STEM degrees across Ottawa.*
 
 
-We chose variables that connected Ottawa’s 24 municipal wards to the university programs that students from these wards enrolled in. This allowed us to test whether the neighborhood someone grew up in affected the program they chose. There is a common belief that “where you came from affects who you become” (Kanata North Business Association, 2023). The goal of our group was to challenge this theory with real data to see if this is true or just an assumption. By analyzing the data, we aimed to see whether one’s neighborhood plays a role in shaping post-secondary study direction.
+For all of these visualizations, we chose variables that connected Ottawa’s 24 municipal wards to the university programs that students from these wards enrolled in. They all allowed us to test whether the neighborhood someone grew up in affected the program they chose. There is a common belief that “where you came from affects who you become” (Kanata North Business Association, 2023). The goal of our group was to challenge this theory with real data to see if this is true or just an assumption. By analyzing the data, we aimed to see whether one’s neighborhood plays a role in shaping post-secondary study direction.
 
-We compared enrollment patterns across all wards, focusing on majors such as social sciences, humanities, and visual or performing arts, to observe whether geography influenced students’ academic choices. Using our pivot table and bar chart, we could easily compare totals and identify which wards leaned toward Arts or STEM fields. The data revealed clear differences: central wards closer to downtown Ottawa had more Arts and communications students, while outer and western wards tended to have higher STEM totals.
+We compared enrollment patterns across all wards, focusing on majors such as social sciences, humanities, and visual or performing arts, to observe whether geography influenced students’ academic choices. Using our pivot tables and bar chart, we could easily compare totals and identify which wards leaned toward Arts or STEM fields. The data revealed clear differences: central wards closer to downtown Ottawa had more Arts and communications students, while outer and western wards tended to have higher STEM totals.
 
 One example that stood out was **Kanata North**, the leading ward for students pursuing studies in STEM, with **25,220 STEM enrollments**, compared to only **1,290 in humanities**, **580 in visual and performing arts**, and **305 in general liberal arts**. This finding helped us understand how the local industry can shape education trends. Kanata North is home to Ottawa’s largest tech hub, the **Kanata North Technology Park**, which hosts over 540 companies and 33,000 employees (Kanata North Business Association, 2023).
 
 This led us to further investigate, and we learned that this pattern appeared across other wards as well, showing a consistent pattern where a ward’s environment and employment landscape seemed to influence academic paths. When turning this into a story, we wanted to explore the question: *Does your past and upbringing affect your future?* Using our pivot table and bar chart, we highlighted how community, opportunity, and location can influence what students choose to study in university. This is something we can all personally relate to, and feel will be an engaging story for university students.  
-
 
 For future investigation, we plan to analyze **median income**, **proximity to post-secondary institutions**, and **population demographics** in each ward to better understand what drives these differences and to strengthen the narrative connections in our final data story.
 
@@ -159,7 +167,7 @@ Therefore, our analysis describes how these differences across the city reflect 
 
 ## 5. Conclusion
 
-Completing this data analysis project taught us that working with large public datasets is as much about storytelling as it is about numbers. At first, the most challenging part was understanding the dataset’s structure. With over two thousand rows, unclear headers, and repetitive variables, it was difficult to know where to begin. Cleaning and organizing the data required patience and precision, especially when trying to remember how to use functions like =TRIM() and narrowing down relevant information into pivot tables in Google Sheets
+Completing this data analysis project taught us that working with large public datasets is as much about storytelling as it is about numbers. At first, the most challenging part was understanding the dataset’s structure. With over two thousand rows, unclear headers, and repetitive variables, it was difficult to know where to begin. Cleaning and organizing the data required patience and precision, especially when trying to remember how to use functions like =SUM() and narrowing down relevant information into pivot tables in Google Sheets. In addition, there were so many steps to take for this project, that ideally should have been taken in order. We found it hard to completely understand the assignment as a whole, rather than just the sections we had to work on individually.
 
 Despite these challenges, the most rewarding part was seeing patterns emerge that told a real story about Ottawa’s communities. Figuring out how geography can shape education and how Western wards lean toward STEM while downtown areas favor the Arts made the project feel relevant and meaningful. It showed us that data can reveal intriguing insights about how people live and learn. 
 
@@ -177,7 +185,7 @@ Statistics Canada. (2022, February 9). *Focus on geography series, 2021 Census o
 Discover Technata. (n.d.). *Discover Technata – live, work, play, learn, innovate in Canada’s largest tech park*. https://www.discovertechnata.com/
 
 Kanata North Business Association. (n.d.). *Hub for emerging technology companies in Ottawa: Kanata North*. 
-Technology-hub-emerging-businesses-ottawa-kanata-north
+https://www.kanatanorthba.com/technology-hub-emerging-businesses-ottawa-kanata-north/
 
 Kanata North Business Association. (2023). *Building together: A strategic roadmap to 2030 (2023‑2028 strategic plan)*. https://www.kanatanorthba.com/strategicplan/
 
